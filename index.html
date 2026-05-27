@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fade Masters Barbershop</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <h2 class="logo">Fade Masters</h2>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#booking">Booking</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Modern Cuts. Clean Style.</h1>
+      <p>Professional barber services with modern style.</p>
+
+      <a href="#booking">
+        <button>Book Appointment</button>
+      </a>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <h2>Our Services</h2>
+
+    <div class="service-cards">
+
+      <div class="card">
+        <h3>Haircut</h3>
+        <p>Classic and modern cuts.</p>
+        <span>15€</span>
+      </div>
+
+      <div class="card">
+        <h3>Beard Trim</h3>
+        <p>Sharp beard styling and shaping.</p>
+        <span>10€</span>
+      </div>
+
+      <div class="card">
+        <h3>Full Service</h3>
+        <p>Haircut + beard + styling.</p>
+        <span>25€</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section class="booking" id="booking">
+    <h2>Book an Appointment</h2>
+
+    <form id="bookingForm">
+
+      <input type="text" id="name" placeholder="Your Name" required />
+
+      <input type="email" id="email" placeholder="Your Email" required />
+
+      <select id="service" required>
+        <option value="">Choose Service</option>
+        <option>Haircut</option>
+        <option>Beard Trim</option>
+        <option>Full Service</option>
+      </select>
+
+      <input type="date" id="date" required />
+
+      <button type="submit">Book Now</button>
+
+    </form>
+
+    <p id="message"></p>
+  </section>
+
+  <!-- CONTACT -->
+  <footer id="contact">
+    <h2>Fade Masters</h2>
+    <p>Phone: +355 69 123 4567</p>
+    <p>Email: info@fademasters.com</p>
+    <p>Open: Mon - Sat | 09:00 - 21:00</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
